@@ -4,7 +4,7 @@ We propose a test-time adaptation method called DR-TTA (Dynamic and Robust Test-
 ![image](img/model_new_2.png)
 
 Visual comparison of segmentation results on the BRATS-SSA and BRATS-SIM datasets. NoTTA indicates results before the different domain adaptation methods. Color legend: WT = red + green + blue, TC = red + blue, ET = red.
-![image](img/SIM.png)
+![image](img/VIS.png)
 
 ## 1.Envirenment
 - Please prepare an environment with python=3.8, and then use the command "pip install -r requirements.txt" for the dependencies.
