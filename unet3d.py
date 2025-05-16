@@ -2,7 +2,7 @@ from scipy import ndimage
 import torch
 import torch.nn as nn
 import numpy as np
-from utils import init_weights, rotate_single_with_label
+from utils_brats_all import init_weights, rotate_single_with_label
 from torch.optim import lr_scheduler
 from torch.nn import init
 import torch.nn.functional as F
