@@ -9,8 +9,8 @@ Visual comparison of segmentation results on the BRATS-SSA and BRATS-SIM dataset
 ## 1.Envirenment
 - Please prepare an environment with python=3.8, and then use the command "pip install -r requirements.txt" for the dependencies.
 
-## 2.Pre-Train in the source domain(BraTS2024)
-- Run train_source.py to get pre-trained weight
+## 2.Pre-Train in the source domain (BraTS2024)
+- Run "train_source.py" to get pre-trained weight.
 
-## 3.Test-time adaption in the target domain(BraTS-SSA)
-- Run run_3d_upl.py to get the result in the target domain.It contains both train and test process.
+## 3.Test-time adaption in the target domain (BraTS-SSA)
+- Run "run_3d_upl.py" to get the result in the target domain. It contains both train and test process.
