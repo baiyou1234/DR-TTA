@@ -15,7 +15,12 @@ pip install -r requirements.txt
 ```
 
 ## 2. Data Preparation
-Run "train_source.py" to get a pre-trained weight:
+- BraTS 2024-SSA:
+```
+python train_source.py
+```
+
+- BraTS 2024-SIM:
 ```
 python train_source.py
 ```
@@ -25,7 +30,7 @@ Run "train_source.py" to get a pre-trained weight:
 ```
 python train_source.py
 ```
-## 4. Test-time adaptation in the target domain (BraTS 2024-SSA/BraTS 2024-SIM)
+## 4. Test-time adaptation in the target domain (SSA/SIM)
 Run "run_3d_upl.py" to get the result in the target domain. It contains both the training and test processes:
 ```
 python run_3d_upl.py
