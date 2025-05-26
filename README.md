@@ -16,15 +16,12 @@ pip install -r requirements.txt
 
 ## 2. Data Preparation
 - BraTS 2024-SSA:
-```
-python train_source.py
-```
+Pre-processed MRI scans (including T1, T1Gd, T2, and FLAIR) from the BRATS-SSA dataset (https://www.synapse.org/Synapse:syn59059780) were utilized in this study.
 
 - BraTS 2024-SIM:
 ```
-python train_source.py
+python sim_dataset_maker.py
 ```
-
 ## 3. Pre-Train in the source domain (BraTS 2024)
 Run "train_source.py" to get a pre-trained weight:
 ```
