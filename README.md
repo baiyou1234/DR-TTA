@@ -6,14 +6,14 @@ We propose a test-time adaptation method called DR-TTA (Dynamic and Robust Test-
 
 
 # 💡 Primary Contributions
-Despite advances in SFUDA, most methods still face two main challenges. The first is catastrophic forgetting, where the model loses the ability to recognize crucial pathological features from the source domain during adaptation. The second involves limited and often poor-quality of target domain data, which leads to low-confidence pseudo-labels. These unreliable labels can degrade model performance, particularly when noise interference is severe. To address these issues, we propose the Dynamic and Robust Test-Time Adaptation (DR-TTA) framework, which offers innovations across three key areas:
+Despite advances in SFUDA, two major challenges remain: (1) catastrophic forgetting, where models lose key source-domain knowledge during adaptation; (2) limited or low-quality target-domain data, producing unreliable pseudo-labels that degrade performance.
+To address these, DR-TTA introduces:
 
-1、Parameter Freezing and Momentum Updating:In this collaborative framework, convolutional weights are frozen to retain critical source domain knowledge, while sample-aware adaptive BatchNorm layers are updated to facilitate cross-domain feature calibration. The teacher model uses momentum updating to create pseudo-labels, thereby reducing distribution bias.
+Parameter Freezing & Momentum Updating: Freeze convolutional weights to retain source knowledge, update adaptive BatchNorm for cross-domain alignment, and use a momentum-updated teacher for pseudo-labels.
 
-2、Dynamic Data Augmentation Optimization:To counteract MRI-specific domain shifts, a backpropagation-driven mechanism dynamically selects from 11 predefined augmentations by optimizing combination weights. This adaptive selection generates high-quality augmented samples that better match the target domain's distribution, thereby enhancing model adaptability.
+Dynamic Data Augmentation: Optimize weights across 11 augmentations via backpropagation to generate target-aligned samples.
 
-3、Hybrid Loss Function and Sample Screening:To stabilize training affected by low-confidence pseudo-labels, a dynamic sample screening strategy is implemented. This confidence-aware and noise-resistant approach eliminates noisy samples and adaptively suppresses their gradient contributions based on reliability estimates, thus improving training robustness and convergence stability.
-
+Hybrid Loss & Sample Screening: Filter low-confidence samples and suppress noisy gradients to enhance robustness and stability.
 
 # ⚡ Visual Comparison
 Visual comparison of segmentation results on the BRATS-SSA and BRATS-SIM datasets. NoTTA indicates results before the different domain adaptation methods. Color legend: WT = red + green + blue, TC = red + blue, ET = red.
