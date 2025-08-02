@@ -20,6 +20,7 @@ Visual comparison of segmentation results on the BRATS-SSA and BRATS-SIM dataset
 ![image](img/VIS.png)
 
 Visual comparison of segmentation results in the ablation study conducted on the BRATS-SSA dataset. The visual results demonstrate that removing any individual component from the DR-TTA framework leads to degraded segmentation quality, with notable boundary artifacts and region misclassifications. Color legend: WT = red + green + blue, TC = red + blue, ET = red.
+![image](img/VIS_ablation.png)
 
 ## 🔧 Environment Setup
 Please prepare an environment with Python 3.8, and then use the command "pip install -r requirements.txt" for the dependencies:
